@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:  50%;
+}
+
+.phone img {
+    height: 50rem;
+}
+
+.continue{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    margin-top: 10px;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1) {
+    min-height: 15rem;
+}
+
+.logo{
+    height: 3rem;
+}
+
+.profile-picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 40%;
+}
+
+.login{
+    background-color: #0095F6;
+    color: white;
+    font-size: 12pt;
+    padding: 3px;
+    border-radius: 4px;
+    padding: 4px;
+    margin-top: 1rem;
+}
+
+.logout {
+    color: #0095F6;
+    margin-top: 1rem;
+}
+
+.not-account {
+    color: rgb(160, 160, 160);
+}
+
+.link-blue {
+    color: #0095F6;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 5rem;
+    width: 15rem;
+    background-color: cover;
+}
+
+.app-download img{
+    width: 100%;
+    height: auto;
+}
+
+/* Alternativa para botões de download de APP
+.app-download:nth-child(1) {
+    background-image: url("./imagens/app_store.png");
+    margin-top: 8px;
+    background-size: 100%;
+}
+
+.app-download:nth-child(2) {
+    background-image: url("./imagens/play_store.png");
+    background-size: 100%;
+}
+*/
+
+@media (max-width: 1024px) {
+    .wrapper{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: white;
+    }
+
+    .group {
+        border: 1px solid transparent;
+    }
+    .wrapper{
+        display: 90%;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .continue {
+        width: 100%;
+    }
+}
